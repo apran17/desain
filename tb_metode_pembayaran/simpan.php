@@ -4,10 +4,9 @@
 include('../koneksi.php');
 
 //get data dari form
-$nama               = $_POST['nama'];
-
+$nama                   = $_POST['nama'];
 //query insert data ke dalam database
-$query = "INSERT INTO tb_kategori (nama)
+$query = "INSERT INTO tb_metode_pembayaran (nama )
 VALUES ('$nama')";
 
 //kondisi pengecekan apakah data berhasil dimasukkan atau tidak

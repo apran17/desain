@@ -37,7 +37,7 @@
                         DATA BARANG
                     </div>
                     <div class="card-body">
-                        <a href="home.php" class="btn btn-md btn-success" style="margin-bottom: 10px">TAMBAH DATA</a>
+                        <a href="tambah.php" class="btn btn-md btn-success" style="margin-bottom: 10px">TAMBAH DATA</a>
                         <table class="table table-bordered" id="myTable">
                             <thead>
                                 <tr>
@@ -46,6 +46,8 @@
                                     <th scope="col">Stock</th>
                                     <th scope="col">Harga Modal</th>
                                     <th scope="col">Harga Jual</th>
+                                    <th scope="col">Id Kategori</th>
+                                    <th scope="col">Id Supplier</th>
                                     <th scope="col">Tanggal Masuk</th>
                                 </tr>
                             </thead>
@@ -63,6 +65,8 @@
                                         <td><?php echo $row['stock'] ?></td>
                                         <td><?php echo $row['harga_modal'] ?></td>
                                         <td><?php echo $row['harga_jual'] ?></td>
+                                        <td><?php echo $row['id_kategori'] ?></td>
+                                        <td><?php echo $row['id_supplier'] ?></td>
                                         <td><?php echo $row['tanggal_masuk'] ?></td>
                                         <td class="text-center">
                                             <a href="edit-barang.php?id=<?php echo $row['id_barang'] ?>" class="btn btn-sm btn-primary">EDIT</a>

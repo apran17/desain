@@ -4,11 +4,16 @@
 include('../koneksi.php');
 
 //get data dari form
-$nama               = $_POST['nama'];
+$nama                   = $_POST['nama'];
+$alamat                 = $_POST['alamat'];
+$no_telp                = $_POST['no_telp'];
+$email                  = $_POST['email'];
+$id_perusahaan          = $_POST['id_perusahaan'];
+
 
 //query insert data ke dalam database
-$query = "INSERT INTO tb_kategori (nama)
-VALUES ('$nama')";
+$query = "INSERT INTO tb_cabang (nama, alamat, no_telp, email, id_perusahaan )
+VALUES ('$nama', '$alamat', '$no_telp', '$email', '$id_perusahaan')";
 
 //kondisi pengecekan apakah data berhasil dimasukkan atau tidak
 if ($connection->query($query)) {

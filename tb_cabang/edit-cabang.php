@@ -19,7 +19,7 @@ $row = mysqli_fetch_array($result);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <title>Edit Barang</title>
+    <title>Edit Cabang</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@ $row = mysqli_fetch_array($result);
             <div class="col-md-8 offset-md-2">
                 <div class="card">
                     <div class="card-header">
-                        EDIT BARANG
+                        EDIT CABANG
                     </div>
                     <div class="card-body">
                         <form action="update-barang.php" method="POST">
@@ -37,37 +37,28 @@ $row = mysqli_fetch_array($result);
                             <div class="form-group">
                                 <label>Nama</label>
                                 <input type="text" name="nama" value="<?php echo $row['nama'] ?>" class="form-control">
-                                <input type="hidden" name="id_barang" value="<?php echo $row['id_barang'] ?>">
+                                <input type="hidden" name="id_cabang" value="<?php echo $row['id_cabang'] ?>">
                             </div>
                             <div class="form-group">
-                                <label>Stock</label>
-                                <input type="number" name="stock" value="<?php echo $row['stock'] ?>" placeholder="" class="form-control">
+                                <label>Alamat</label>
+                                <input type="number" name="alamat" value="<?php echo $row['alamat'] ?>" placeholder="" class="form-control">
                             </div>
 
                             <div class="form-group">
-                                <label>Harga Modal</label>
-                                <input type="number" name="harga_modal" value="<?php echo $row['harga_modal'] ?>" placeholder="" class="form-control">
+                                <label>No Telp</label>
+                                <input type="number" name="no_telp" value="<?php echo $row['no_telp'] ?>" placeholder="" class="form-control">
                             </div>
 
                             <div class="form-group">
-                                <label>Harga Jual</label>
-                                <input type="number" name="harga_jual" value="<?php echo $row['harga_jual'] ?>" placeholder="" class="form-control">
+                                <label>Email</label>
+                                <input type="email" name="email" value="<?php echo $row['email'] ?>" placeholder="" class="form-control">
                             </div>
 
                             <div class="form-group">
-                                <label>Id Kategori</label>
-                                <input type="number" name="id_kategori" value="<?php echo $row['id_kategori'] ?>" placeholder="" class="form-control">
+                                <label>Id Perusahaan</label>
+                                <input type="number" name="id_perusahaan" value="<?php echo $row['id_perusahaan'] ?>" placeholder="" class="form-control">
                             </div>
 
-                            <div class="form-group">
-                                <label>Id Supplier</label>
-                                <input type="number" name="id_supplier" value="<?php echo $row['id_supplier'] ?>" placeholder="" class="form-control">
-                            </div>
-
-                            <div class="form-group">
-                                <label>Tanggal Masuk</label>
-                                <input type="date" name="tanggal_masuk" value="<?php echo $row['tanggal_masuk'] ?>" placeholder="" class="form-control">
-                            </div>
 
                             <button type="submit" class="btn btn-success">UPDATE</button>
                             <button type="reset" class="btn btn-warning">RESET</button>

@@ -37,11 +37,11 @@
                         DATA KATEGORI
                     </div>
                     <div class="card-body">
-                        <a href="home.php" class="btn btn-md btn-success" style="margin-bottom: 10px">TAMBAH DATA</a>
+                        <a href="tambah.php" class="btn btn-md btn-success" style="margin-bottom: 10px">TAMBAH DATA</a>
                         <table class="table table-bordered" id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col">NO.</th>
+                                    <th scope="col">ID.</th>
                                     <th scope="col">Nama</th>
                                 </tr>
                             </thead>

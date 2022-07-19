@@ -4,11 +4,11 @@
 include('../koneksi.php');
 
 //get data dari form
-$nama               = $_POST['nama'];
-
+$id_metode_pembayaran           = $_POST['id_metode_pembayaran'];
+$nama                           = $_POST['nama'];
 //query insert data ke dalam database
-$query = "INSERT INTO tb_kategori (nama)
-VALUES ('$nama')";
+//query update data ke dalam database berdasarkan ID
+$query = "UPDATE tb_metode_pembayaran SET nama = '$nama' WHERE id_metode_pembayaran = '$id_metode_pembayaran'";
 
 //kondisi pengecekan apakah data berhasil dimasukkan atau tidak
 if ($connection->query($query)) {
